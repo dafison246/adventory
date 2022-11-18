@@ -1,0 +1,511 @@
+header{
+    nav{
+        width: 100%;
+        height: 100vh;
+        max-height: 700px;
+        background-image: url("../image/Rectangle 6.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        .navigation{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            ul.adventor{
+                li{
+                    list-style: none;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: bold;
+                    font-size: 28px;
+                    color: #fff;
+                }
+            }
+            .menuBtn{
+                cursor: pointer;
+                z-index: 1;
+                div{
+                    width: 40px;
+                    height: 4px;
+                    margin: 5px 10px 0 0;
+                    background-color: #fff;
+                }
+                .bar1,.bar3{
+                    transform: translate(0,0) rotate(0deg);
+                    transition: transform 0.6s;
+                }
+            }
+            .change{
+                cursor: pointer;
+                z-index: 1;
+                div{
+                    width: 40px;
+                    height: 4px;
+                    margin: 5px 10px 0 0;
+                    background-color: #fff;
+                }
+            }
+            .change {
+                .bar1{
+                    transform: translate(0,11px) rotate(-45deg);
+                    transition: transform 0.6s;
+                }
+            }
+            .change{
+                .bar2{
+                    opacity: 0;
+                }
+            }
+            .change{
+                .bar3{
+                    transform: translate(0,-11px) rotate(45deg);
+                    transition: transform 0.6s;
+                }
+            }
+            ul.secondary{
+                display: block;
+                position: absolute;
+                right: 0;
+                top: -15px;
+                height: 0;
+                width: 180px;
+                overflow: hidden;
+                padding: 0;
+                background-color: rgb(36, 36, 36);
+                transition: 0.6s;
+
+                li{
+                    list-style: none;
+                    text-align: left!important;
+                    a{
+                        text-decoration: none;
+                        display: block;
+                        margin-top: 55px;
+                        padding: 5px 15px;
+                        color: #fff;
+                    }
+                }
+                .explore{
+                   a{
+                    padding: 12px;
+                    background-color: goldenrod;
+                   }
+                }
+            }
+        }
+        .content{
+            text-align: center;
+            margin: 150px 0;
+            h3{
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 40px;
+                color: #fff;
+                line-height: 0px;
+            }
+            h1{
+                text-transform: capitalize;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: bold;
+                font-size: 45px;
+                color: #fff;
+            }
+            p{
+                color: #fff;
+                line-height: 25px;
+            }
+            button{
+                font-size: 18px;
+                text-transform: capitalize;
+                font-weight: bold;
+                padding: 9px 40px;
+                color: #fff;
+                background-color: goldenrod;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                
+            }
+        }
+    }
+}
+main{
+   
+    .container{
+        margin: -30px 0 -17px 0;
+        background-image: url("../image/Rectangle 7.png");
+        .headline{
+            h3{
+                font-family: monospace;
+                font-size: 30px;
+               line-height: 90px;
+                color: #22CDFF;
+            }
+            h1{
+                font-family: monospace;
+                font-weight: bold;
+                font-size: 50px;
+                margin: 0 0 80px 0;
+                line-height: 2px;
+            }
+        }
+        .columns{
+            .description{
+                #change{
+                    display: block;
+                }
+                #remove{
+                    display: none;
+                }
+                #hide{
+                    display: none;
+                }
+                .Read{
+                    color: orangered;
+                    cursor: pointer;
+                }
+                #showLess{
+                    color: orangered;
+                    cursor: pointer;
+                }
+            }
+            ul{
+                li{
+                    list-style: none;
+                    margin:40px 12px;
+                    padding: 0 20px;
+                    .description{
+                        .head{
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-around;
+                            h2{
+                                margin: 0;
+                            }
+                           
+                        }
+                    }
+                    button{
+                        width: 100%;
+                        padding: 10px 0;
+                        font-size: 18px;
+                        color: #fff;
+                        background-color: #EFAB29;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .postal{
+            .first-postal{
+                padding: 0 15px;
+                .container{
+                    position: relative;
+                    max-width: 617px;
+                    height: 408px;
+                    padding: 20px 0;
+                    margin-top: 100px;
+                    background: #EFFCF1;
+                    border-radius: 5px;
+                    text-align: center;
+                    h1{
+                        text-align: left;
+                        padding: 0 25px;
+                    }
+                    .line{
+                        width: 100px;
+                        height: 5px;
+                        margin-left: 30px;
+                        background-color: #22CDFF;
+                    }
+                }
+                p{
+                    line-height: 25px;
+                    font-size: 15px;
+                    padding: 0 25px;
+                    text-align: left;
+                }
+            }
+            .second-postal{
+                .container{
+                    position: relative;
+                    max-width: 617px;
+                   img{
+                    width: 100%;
+                   }
+                }
+            }
+        }
+        .testimonies{
+            margin-top: 120px;
+            .heading{
+                h3{
+                    font-family: monospace;
+                    font-size: 18px;
+                    color: #22CDFF;
+                }
+                h1{
+                    font-size: 50px;
+                    margin: 0;
+                }
+            }
+            .image{
+                position: relative;
+                margin-top: 25px;
+                h4{
+                    font-family: 'Palanquin Dark';
+                    font-size: 28px;
+                    margin: 20px 0 0 0;
+                }
+                cite{
+                    font-family: 'Jost';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 26px;
+                    line-height: 38px;
+                }
+                .icons{
+                    position: absolute;
+                    top: 80%;
+                    font-size: 30px;
+                    width: 100%;
+                    cursor: pointer;
+                    .left{
+                        position: absolute;
+                        left: 0;
+                        padding: 0 30px;
+                    }
+                    .right{
+                        position: absolute;
+                        right: 0;
+                        padding: 0 30px;
+                        color: #EFAB29;
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    position: relative;
+    text-align: left;
+    .container{
+        max-width: 1440px;
+        height: 530px;
+        padding: 20px 30px;
+        background-color: #0E2911;
+        .about-adv{
+            h2{
+               
+                color: #fff;
+            }
+            p{
+                color: #fff;
+                padding: 0 30px 0 0;
+            }
+        }
+        .quick{
+            h2{
+                color: #fff;
+            }
+            ul{
+                padding: 0;
+                li{
+                    list-style: none;
+                    color: #fff;
+                    padding: 5px 0;
+                }
+            }
+            .quick-container{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .subscribe{
+            position: relative;
+            color: #fff;
+            input{
+                width: 100%;
+                box-sizing: border-box;
+                padding: 9px 15px;
+            }
+            .icon{
+                display: flex;
+                position: absolute;
+                top: 45px;
+                right: 5px;
+                width: 103px;
+                height: 27px;
+                text-align: center;
+                background: #EFAB29;
+                border-radius: 2px;
+                cursor: pointer;
+                p.sub{
+                   
+                    font-size: 12px;
+                    margin: 5px;
+                    
+                }
+                p.right{
+                   font-size: 20px;
+                    margin: 4px;
+                }
+            }
+        }
+        .bottom{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .policy{
+                font-size: 12px;
+                color: #fff;
+
+            }
+            .social-media{
+                a{
+                    display: inline-block;
+                    padding: 0 10px;
+                    font-size: 23px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+@media(min-width:768px){
+    header{
+        nav{
+            .navigation{
+                .menuBtn{
+                    display: none;
+                }
+                ul.secondary{
+                    display: flex;
+                    align-items: center;
+                    position: unset;
+                    left: 0;
+                    padding: 0 250px;
+                    overflow: visible;
+                    li{
+                        a{
+                            margin: 0;
+                        }
+                    }
+                    .explore{
+                        a{
+                            text-align: center;
+                            width: 100px;
+                            border-radius: 4px;
+                        }
+                        
+                    }
+                }
+            }
+            .content{
+                width: 60%;
+                padding: 0 30px;
+                margin: 0 auto;
+                
+            }
+        }
+    }
+    main{ 
+        .container{
+           
+            ul.col{
+                display: grid;
+                // grid-template-columns: repeat(2, minmax(0, 1fr));
+                grid-template-columns: auto auto;
+                
+             
+            }
+        
+        }
+    }
+}
+@media(min-width: 1200px){
+    main{
+        .container{
+            .columns{
+                width: 1200px;
+                margin: 0 auto;
+                ul.col{
+                    grid-template-columns: repeat(3, minmax(0, 1fr));
+                }
+                .postal{
+                    position: relative;
+                    .first-postal{
+                        .container{
+                            padding:20px;
+                            height: 350px;
+                            margin-bottom: 200px;
+                           
+                            p{
+                                width: 500px;
+                               
+                            }
+                        }
+                    }
+                    .second-postal{
+                        .container{
+                            position: absolute;
+                            top: 200px;
+                            left: 50%;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    footer{
+        .container{
+            max-width: unset;
+            height: auto;
+            .content{
+                display: flex;
+                padding: 20px;
+                .about-adv,.quick,.subscribe{
+                    width: 30%;
+                    padding: 20px;
+                }
+                .quick{
+                    .quick-container{
+                        justify-content: left;
+                        ul.second{
+                  
+                            margin-left: 130px;
+                        }
+                    }
+                }
+                .subscribe{
+                    .icon{
+                        top: 87px;
+                        right: 30px;
+                    }
+                }
+            }
+            .bottom{
+                justify-content: right;
+                p{
+                    margin-right: 30px;
+                    font-size: 15px;
+                    font-weight: 800;
+                }
+            }
+           
+        }
+    }
+}
+@media(min-width: 1400px){
+    main{
+        .container{
+            .columns{
+                ul.col{
+                    grid-template-columns: auto auto auto auto;
+                }
+            }
+           
+        }
+    }
+}
